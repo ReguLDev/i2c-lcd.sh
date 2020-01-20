@@ -1,12 +1,16 @@
 #!/bin/bash
 ##############################################################
 #i2c lcd script by Michael S. Ageev (c) mike.s.ageev@gmail.com
-# Russia 2017
+# Russia 2016
 ##############################################################
-#Usage: ./lcd.sh "hello World!"
+#Usage: http://you_website/cgi-bin/lcd.cgi?str=blablabla
 #
 #sda_gpio=18
 #scl_gpio=20
+#insmod i2c-dev
+#insmod i2c-gpio-custom bus0=0,$sda_gpio,$scl_gpio
+
+# i2c addr of PCF8574 1620LCD
 i2c_adres=0x3f
 
 
@@ -14,9 +18,6 @@ i2c_adres=0x3f
 echo "Content-Type: text/html; charset=UTF-8;"
 echo "Cache-Control: no-cache"
 echo
-echo $OUT_STRING
-#insmod i2c-dev
-#insmod i2c-gpio-custom bus0=0,$sda_gpio,$scl_gpio
 print_html_head(){
 #<meta http-equiv="Refresh" content="10" />
 cat << END
@@ -24,13 +25,9 @@ cat << END
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <HEAD>
-<title>i2c LCD</title>
-<link rel="shortcut icon" href="/logo/small-icon.ico" type="image/x-icon">
-<META http-equiv=Content-Type content="text/html; charset=UTF-8">
-<script type="text/javascript" 
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
-</script>
-
+    <title>i2c LCD</title>
+    <link rel="shortcut icon" href="/logo/small-icon.ico" type="image/x-icon">
+    <META http-equiv=Content-Type content="text/html; charset=UTF-8">
 </head>
 
 <body>
