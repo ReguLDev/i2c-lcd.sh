@@ -1,7 +1,7 @@
 #!/bin/bash
 ##########################################################
 #i2c lcd script by Michael S. Ageev (c) midiserver@mail.ru
-# Russia 2016
+# Russia 2017
 ##########################################################
 #Usage: ./lcd.sh "hello World!"
 #
