@@ -1,8 +1,8 @@
 #!/bin/bash
-##########################################################
-#i2c lcd script by Michael S. Ageev (c) midiserver@mail.ru
-# Russia 2018
-##########################################################
+##############################################################
+#i2c lcd script by Michael S. Ageev (c) mike.s.ageev@gmail.com
+# Russia 2017
+##############################################################
 #Usage: ./lcd.sh "hello World!"
 #
 #sda_gpio=18
