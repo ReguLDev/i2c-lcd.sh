@@ -22,7 +22,7 @@ HowTo:
 
 The listing blow shows an example output of the command. As one can see, I connected three I2C devices to my Orange Pi Zero.
     #sudo -u www-data "i2cdetect -y N"
-
+```
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- 04 -- -- -- -- -- -- -- -- -- -- -- 
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
@@ -32,7 +32,7 @@ The listing blow shows an example output of the command. As one can see, I conne
 50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 70: -- -- -- -- -- -- -- 77
-
+```
 
 6) Lastly, we need to make the changes permament, so we don't need to repeat them on every reboot.
     #su root
