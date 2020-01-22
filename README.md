@@ -58,5 +58,8 @@ Next, create a udev rule file as shown below:
 Open browser and go to link:
 ###   http://you_website/cgi-bin/lcd.cgi?str=blablabla
 
+9) Result:
+![i2c LCD 1602 control via CGI](i2c-lcd-cgi.png)
+
 
 *Russia, Krasnoyarsk 2020 mike.sageev@gmail.com*
