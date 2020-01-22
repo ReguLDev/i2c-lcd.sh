@@ -12,7 +12,8 @@
 
 # i2c addr of PCF8574 1620LCD
 i2c_adres=0x3f
-
+#i2c bus number
+i2c_bus=0
 
 
 echo "Content-Type: text/html; charset=UTF-8;"
@@ -51,13 +52,13 @@ write_CMD () {
 : $((lb = ($c << 4)  & 240 ))
 
 		hh=$((4 + $hb + $led))
-	i2cset -f -y 0 $i2c_adres $hh > /dev/null
+	i2cset -f -y $i2c_bus $i2c_adres $hh > /dev/null
 		hh=$((0 + $hb + $led))
-	i2cset -f -y 0 $i2c_adres $hh > /dev/null
+	i2cset -f -y $i2c_bus $i2c_adres $hh > /dev/null
 		hh=$((4 + $lb + $led))
-	i2cset -f -y 0 $i2c_adres $hh > /dev/null
+	i2cset -f -y $i2c_bus $i2c_adres $hh > /dev/null
 		hh=$((0 + $lb + $led))
-	i2cset -f -y 0 $i2c_adres $hh > /dev/null
+	i2cset -f -y $i2c_bus $i2c_adres $hh > /dev/null
 }
 
 
@@ -66,13 +67,13 @@ print_LCD () {
 : $((lb = ($c << 4)  & 240 ))
 
 		hh=$((5 + $hb + $led))
-	i2cset -f -y 0 $i2c_adres $hh > /dev/null
+	i2cset -f -y $i2c_bus $i2c_adres $hh > /dev/null
 		hh=$((1 + $hb + $led))
-	i2cset -f -y 0 $i2c_adres $hh > /dev/null
+	i2cset -f -y $i2c_bus $i2c_adres $hh > /dev/null
 		hh=$((5 + $lb + $led))
-	i2cset -f -y 0 $i2c_adres $hh > /dev/null
+	i2cset -f -y $i2c_bus $i2c_adres $hh > /dev/null
 		hh=$((1 + $lb + $led))
-	i2cset -f -y 0 $i2c_adres $hh > /dev/null
+	i2cset -f -y $i2c_bus $i2c_adres $hh > /dev/null
 }
 
 ##########  init LCD  #####################
