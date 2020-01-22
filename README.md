@@ -62,4 +62,4 @@ Open browser and go to link:
 ![i2c LCD 1602 control via CGI](i2c-lcd-cgi.png)
 
 
-*Russia, Krasnoyarsk 2020 mike.sageev@gmail.com*
+*Russia, Krasnoyarsk 2020 mike.s.ageev@gmail.com*
