@@ -52,8 +52,9 @@ Next, create a udev rule file as shown below:
 		|
 		L_______you lcd i2c addr
 ```
-8) Put lcd.cgi script to you server../cgi-bin
-#    Open browser and go to link:
+8) Put lcd.cgi script to you server folder ../cgi-bin
+
+Open browser and go to link:
 #   http://you_website/cgi-bin/lcd.cgi?str=blablabla
 
 
