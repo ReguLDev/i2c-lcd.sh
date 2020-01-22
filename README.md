@@ -55,7 +55,7 @@ Next, create a udev rule file as shown below:
 8) Put lcd.cgi script to you server folder ../cgi-bin
 
 Open browser and go to link:
-#   http://you_website/cgi-bin/lcd.cgi?str=blablabla
+###   http://you_website/cgi-bin/lcd.cgi?str=blablabla
 
 
-			Russia, Krasnoyarsk 2020
+*Russia, Krasnoyarsk 2020 mike.sageev@gmail.com*
