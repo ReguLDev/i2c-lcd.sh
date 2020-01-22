@@ -25,8 +25,8 @@ HowTo:
 5) After you logout and login again you should be able to run i2cdetect -y N.
 
 The listing blow shows an example output of the command. As one can see, I connected three I2C devices to my Orange Pi Zero.
-    #sudo -u www-data "i2cdetect -y N"
-```
+```    #sudo -u www-data "i2cdetect -y N"
+
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- 04 -- -- -- -- -- -- -- -- -- -- -- 
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
